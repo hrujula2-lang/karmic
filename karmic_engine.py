@@ -18,8 +18,7 @@ st.set_page_config(page_title="The Karmic Path", layout="wide")
 # Direct key for local testing (Change to st.secrets["GEMINI_API_KEY"] before GitHub upload)
 # Fetches the key securely from the Streamlit Cloud environment
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
-client = genai.Client(api_key=LOCAL_KEY)
-
+client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 st.markdown("""
 <style>
 div[data-testid="stImage"] img {
